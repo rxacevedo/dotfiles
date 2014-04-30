@@ -1,3 +1,6 @@
 [submodule "emacs/emacs.d.symlink"]
 	path = emacs/emacs.d.symlink
 	url = git://github.com/rxacevedo/emacs.d.git
+[submodule "vim/vim.symlink"]
+	path = vim/vim.symlink
+	url = git@github.com:rxacevedo/vim.git
