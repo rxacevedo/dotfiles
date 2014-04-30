@@ -1,4 +1,58 @@
-syntax on
+call pathogen#infect()
+call pathogen#helptags()
+" colorscheme solarized
+set background=dark
+filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
+set nocompatible      " We're running Vim, not Vi!
+set runtimepath^=~/.vim/bundle/
+set number
+" stop highlighting C++ keywords as errors
+let java_allow_cpp_keywords = 1
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+" Set text width (word wrap)
+set tw=79
+ 
+" set number
+map <C-N><C-N> :set invnumber<CR>
+set expandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
+set autoindent
+set tags=./tags;/
+set whichwrap+=h,l
+syntax on
+ 
+" disable arrow keys
+" (Don't be a noob, learn hjkl)
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
+set wrapmargin=0
+ 
+"ruby
+"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+"autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+"autocmd FileType ruby,eruby let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+ 
+"improve autocomplete menu color
+"highlight Pmenu ctermbg=238 gui=bold
+ 
+"Supertab for Ruby
+let g:SuperTabDefaultCompletionType = "\<c-x>\<c-o>" 
+
+"Vim-Execrus
+map <C-E> :call g:Execrus()<CR>
+
+"vim-arline"
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+"set noshowmode
