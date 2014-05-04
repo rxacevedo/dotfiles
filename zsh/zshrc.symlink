@@ -12,7 +12,7 @@ eval "$(rbenv init -)"
 # }
 
 # RPROMPT="$(battery_charge)"
-PROMPT='%n@%m:%~$ '
+# PROMPT='%n@%m:%~$ '
 
 ###################################################################################
 ### initial values start here                                         ### <-- BEGIN
@@ -35,15 +35,17 @@ compinit
 ###################################################################################
 ### The below are entries ripped directly from .bash_profile (manually) ### <-- BEGIN
 ###################################################################################
+
 # Tell ls to be colourful
-export CLICOLOR=1
-export LSCOLORS=Exfxcxdxbxegedabagacad
+# export CLICOLOR=1
+# export LSCOLORS=Exfxcxdxbxegedabagacad
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
 # Sourcing GRC for colorized terminal output
 source "`brew --prefix grc`/etc/grc.bashrc"
+
 ###################################################################################
 ### The below are entries ripped directly from .bash_profile (manually) ### <-- END
 ###################################################################################
@@ -140,17 +142,17 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ###################################################################################
 
 # # shortcut to this dotfiles path is $ZSH
-# export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/.dotfiles
 # 
 # # your project folder that we can `c [tab]` to
-# export PROJECTS=~/Code
+export PROJECTS=~/Code
 # 
 # # use .localrc for SUPER SECRET CRAP that you don't
 # # want in your public, versioned repo.
-# if [[ -a ~/.localrc ]]
-# then
-#   source ~/.localrc
-# fi
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
 # 
 # # all of our zsh files
 # typeset -U config_files
