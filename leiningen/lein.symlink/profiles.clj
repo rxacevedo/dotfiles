@@ -1,4 +1,4 @@
-{:user {:local-repo "~/.m2/repository/"        
+{:user {:local-repo "/Users/Roberto/.m2/repository/"        
         :search-page-size 10
         :plugins [[cider/cider-nrepl "0.7.0-SNAPSHOT"]
                   [lein-exec "0.3.2"]
