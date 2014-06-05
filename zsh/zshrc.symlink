@@ -3,6 +3,9 @@ PATH=$HOME/bin:$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/us
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+#
+# Java Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/
 
 # rbenv shit (This should get loaded via DOTFILES/ruby/rbenv.zsh ?)
 eval "$(rbenv init -)"
@@ -117,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -148,7 +151,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export CODE=~/Code
+export CODE=$HOME/Code
 
 # Octopress
 export OCTOPRESS=$CODE/yggdrasil/octopress
