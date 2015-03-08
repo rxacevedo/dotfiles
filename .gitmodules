@@ -6,4 +6,4 @@
 	url = git@github.com:rxacevedo/vim.git
 [submodule "lein/lein.symlink"]
   path = lein/lein.symlink
-  url = git@github.com:rxacedo/.lein.git
+  url = git@github.com:rxacevedo/.lein.git
