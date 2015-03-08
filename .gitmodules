@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink"]
 	path = vim/vim.symlink
 	url = git@github.com:rxacevedo/vim.git
+[submodule "lein/lein.symlink"]
+  path = lein/lein.symlink
+  url = git@github.com:rxacedo/lein.git

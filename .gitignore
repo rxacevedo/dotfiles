@@ -12,3 +12,4 @@ leiningen/lein.symlink/indices/
 leiningen/lein.symlink/repl-history
 leiningen/lein.symlink/repl-port
 leiningen/lein.symlink/self-installs/
+.DS_Store
